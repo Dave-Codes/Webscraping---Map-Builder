@@ -1,0 +1,447 @@
+2024-Dec-13-16-07-30 : Preliminaries complete. Initiating ETL process
+2024-Dec-13-16-07-33 : Data saved to CSV file
+2024-Dec-13-16-07-33 : SQL Connection initiated
+2024-Dec-13-16-07-33 : Data loaded to Database as a table, Executing queries
+2024-Dec-13-16-09-48 : Preliminaries complete. Initiating ETL process
+2024-Dec-13-16-09-51 : Data saved to CSV file
+2024-Dec-13-16-09-51 : SQL Connection initiated
+2024-Dec-13-16-09-51 : Data loaded to Database as a table, Executing queries
+2024-Dec-13-16-09-51 : Process Complete
+2024-Dec-18-17-40-17 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-17-40-24 : Data saved to CSV file
+2024-Dec-18-17-40-24 : SQL Connection initiated
+2024-Dec-18-17-40-24 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-17-40-24 : Process Complete
+2024-Dec-18-17-42-27 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-17-42-30 : Data saved to CSV file
+2024-Dec-18-17-42-30 : SQL Connection initiated
+2024-Dec-18-17-42-30 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-17-42-30 : Process Complete
+2024-Dec-18-17-47-03 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-17-47-06 : Data saved to CSV file
+2024-Dec-18-17-47-06 : SQL Connection initiated
+2024-Dec-18-17-47-06 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-17-47-06 : Process Complete
+2024-Dec-18-18-09-16 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-18-09-19 : Data saved to CSV file
+2024-Dec-18-18-09-19 : SQL Connection initiated
+2024-Dec-18-18-09-19 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-18-09-19 : Process Complete
+2024-Dec-18-18-20-06 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-18-20-09 : Data saved to CSV file
+2024-Dec-18-18-20-09 : SQL Connection initiated
+2024-Dec-18-18-20-09 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-18-20-10 : Process Complete
+2024-Dec-18-18-26-41 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-18-26-45 : Data saved to CSV file
+2024-Dec-18-18-26-45 : SQL Connection initiated
+2024-Dec-18-18-26-45 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-18-26-45 : Process Complete
+2024-Dec-18-18-35-11 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-18-35-15 : Data saved to CSV file
+2024-Dec-18-18-35-15 : SQL Connection initiated
+2024-Dec-18-18-35-15 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-18-35-15 : Process Complete
+2024-Dec-18-18-39-58 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-18-40-01 : Data saved to CSV file
+2024-Dec-18-18-40-01 : SQL Connection initiated
+2024-Dec-18-18-40-01 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-18-40-01 : Process Complete
+2024-Dec-18-21-14-04 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-14-08 : Data saved to CSV file
+2024-Dec-18-21-14-08 : SQL Connection initiated
+2024-Dec-18-21-14-08 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-14-08 : Process Complete
+2024-Dec-18-21-17-15 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-17-18 : Data saved to CSV file
+2024-Dec-18-21-17-18 : SQL Connection initiated
+2024-Dec-18-21-17-18 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-17-18 : Process Complete
+2024-Dec-18-21-18-28 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-18-32 : Data saved to CSV file
+2024-Dec-18-21-18-32 : SQL Connection initiated
+2024-Dec-18-21-18-32 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-18-32 : Process Complete
+2024-Dec-18-21-28-23 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-28-26 : Data saved to CSV file
+2024-Dec-18-21-28-26 : SQL Connection initiated
+2024-Dec-18-21-28-26 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-28-26 : Process Complete
+2024-Dec-18-21-29-41 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-29-46 : Data saved to CSV file
+2024-Dec-18-21-29-46 : SQL Connection initiated
+2024-Dec-18-21-29-46 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-29-46 : Process Complete
+2024-Dec-18-21-39-21 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-39-25 : Data saved to CSV file
+2024-Dec-18-21-39-25 : SQL Connection initiated
+2024-Dec-18-21-39-25 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-39-25 : Process Complete
+2024-Dec-18-21-42-17 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-42-21 : Data saved to CSV file
+2024-Dec-18-21-42-21 : SQL Connection initiated
+2024-Dec-18-21-42-21 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-42-21 : Process Complete
+2024-Dec-18-21-48-11 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-48-14 : Data saved to CSV file
+2024-Dec-18-21-48-14 : SQL Connection initiated
+2024-Dec-18-21-48-14 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-48-14 : Process Complete
+2024-Dec-18-21-54-06 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-21-54-09 : Data saved to CSV file
+2024-Dec-18-21-54-09 : SQL Connection initiated
+2024-Dec-18-21-54-09 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-21-54-09 : Process Complete
+2024-Dec-18-22-15-37 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-15-40 : Data saved to CSV file
+2024-Dec-18-22-15-40 : SQL Connection initiated
+2024-Dec-18-22-15-40 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-15-40 : Process Complete
+2024-Dec-18-22-36-53 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-36-57 : Data saved to CSV file
+2024-Dec-18-22-36-57 : SQL Connection initiated
+2024-Dec-18-22-36-57 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-36-57 : Process Complete
+2024-Dec-18-22-40-23 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-40-26 : Data saved to CSV file
+2024-Dec-18-22-40-26 : SQL Connection initiated
+2024-Dec-18-22-40-26 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-40-26 : Process Complete
+2024-Dec-18-22-42-50 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-42-53 : Data saved to CSV file
+2024-Dec-18-22-42-53 : SQL Connection initiated
+2024-Dec-18-22-42-53 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-42-53 : Process Complete
+2024-Dec-18-22-44-31 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-44-33 : Data saved to CSV file
+2024-Dec-18-22-44-33 : SQL Connection initiated
+2024-Dec-18-22-44-33 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-44-33 : Process Complete
+2024-Dec-18-22-56-28 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-22-56-31 : Data saved to CSV file
+2024-Dec-18-22-56-31 : SQL Connection initiated
+2024-Dec-18-22-56-31 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-22-56-31 : Process Complete
+2024-Dec-18-23-03-56 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-03-59 : Data saved to CSV file
+2024-Dec-18-23-03-59 : SQL Connection initiated
+2024-Dec-18-23-03-59 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-03-59 : Process Complete
+2024-Dec-18-23-05-26 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-05-28 : Data saved to CSV file
+2024-Dec-18-23-05-28 : SQL Connection initiated
+2024-Dec-18-23-05-28 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-05-28 : Process Complete
+2024-Dec-18-23-06-16 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-06-18 : Data saved to CSV file
+2024-Dec-18-23-06-18 : SQL Connection initiated
+2024-Dec-18-23-06-18 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-06-18 : Process Complete
+2024-Dec-18-23-07-39 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-07-42 : Data saved to CSV file
+2024-Dec-18-23-07-42 : SQL Connection initiated
+2024-Dec-18-23-07-42 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-07-42 : Process Complete
+2024-Dec-18-23-10-27 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-10-29 : Data saved to CSV file
+2024-Dec-18-23-10-29 : SQL Connection initiated
+2024-Dec-18-23-10-29 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-10-29 : Process Complete
+2024-Dec-18-23-14-31 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-14-34 : Data saved to CSV file
+2024-Dec-18-23-14-34 : SQL Connection initiated
+2024-Dec-18-23-14-34 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-14-34 : Process Complete
+2024-Dec-18-23-15-42 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-15-44 : Data saved to CSV file
+2024-Dec-18-23-15-44 : SQL Connection initiated
+2024-Dec-18-23-15-44 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-15-44 : Process Complete
+2024-Dec-18-23-17-16 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-17-18 : Data saved to CSV file
+2024-Dec-18-23-17-18 : SQL Connection initiated
+2024-Dec-18-23-17-18 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-17-18 : Process Complete
+2024-Dec-18-23-18-21 : Preliminaries complete. Initiating ETL process
+2024-Dec-18-23-18-25 : Data saved to CSV file
+2024-Dec-18-23-18-25 : SQL Connection initiated
+2024-Dec-18-23-18-25 : Data loaded to Database as a table, Executing queries
+2024-Dec-18-23-18-25 : Process Complete
+2024-Dec-23-16-15-20 : Preliminaries complete. Initiating ETL process
+2024-Dec-23-16-15-24 : Data saved to CSV file
+2024-Dec-23-16-15-24 : SQL Connection initiated
+2024-Dec-23-16-15-24 : Data loaded to Database as a table, Executing queries
+2024-Dec-23-16-15-24 : Process Complete
+2024-Dec-23-16-19-23 : Preliminaries complete. Initiating ETL process
+2024-Dec-23-16-19-26 : Data saved to CSV file
+2024-Dec-23-16-19-26 : SQL Connection initiated
+2024-Dec-23-16-19-26 : Data loaded to Database as a table, Executing queries
+2024-Dec-23-16-19-26 : Process Complete
+2024-Dec-23-16-20-28 : Preliminaries complete. Initiating ETL process
+2024-Dec-23-16-20-30 : Data saved to CSV file
+2024-Dec-23-16-20-30 : SQL Connection initiated
+2024-Dec-23-16-20-30 : Data loaded to Database as a table, Executing queries
+2024-Dec-23-16-20-30 : Process Complete
+2025-Jan-28-14-12-38 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-19-23 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-49-43 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-49-47 : Data saved to CSV file
+2025-Jan-28-14-49-47 : SQL Connection initiated
+2025-Jan-28-14-49-47 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-14-49-47 : Process Complete
+2025-Jan-28-14-52-07 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-52-09 : Data saved to CSV file
+2025-Jan-28-14-52-09 : SQL Connection initiated
+2025-Jan-28-14-52-09 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-14-52-09 : Process Complete
+2025-Jan-28-14-55-42 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-55-44 : Data saved to CSV file
+2025-Jan-28-14-55-44 : SQL Connection initiated
+2025-Jan-28-14-55-44 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-14-55-44 : Process Complete
+2025-Jan-28-14-56-43 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-14-56-45 : Data saved to CSV file
+2025-Jan-28-14-56-45 : SQL Connection initiated
+2025-Jan-28-14-56-45 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-14-56-45 : Process Complete
+2025-Jan-28-15-08-56 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-08-58 : Data saved to CSV file
+2025-Jan-28-15-08-58 : SQL Connection initiated
+2025-Jan-28-15-08-58 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-08-58 : Process Complete
+2025-Jan-28-15-25-42 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-25-44 : Data saved to CSV file
+2025-Jan-28-15-25-44 : SQL Connection initiated
+2025-Jan-28-15-25-44 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-25-45 : Process Complete
+2025-Jan-28-15-27-23 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-27-25 : Data saved to CSV file
+2025-Jan-28-15-27-25 : SQL Connection initiated
+2025-Jan-28-15-27-25 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-27-25 : Process Complete
+2025-Jan-28-15-27-43 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-27-45 : Data saved to CSV file
+2025-Jan-28-15-27-45 : SQL Connection initiated
+2025-Jan-28-15-27-45 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-27-45 : Process Complete
+2025-Jan-28-15-28-24 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-28-25 : Data saved to CSV file
+2025-Jan-28-15-28-25 : SQL Connection initiated
+2025-Jan-28-15-28-25 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-28-25 : Process Complete
+2025-Jan-28-15-39-44 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-39-47 : Data saved to CSV file
+2025-Jan-28-15-39-47 : SQL Connection initiated
+2025-Jan-28-15-39-47 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-39-47 : Process Complete
+2025-Jan-28-15-48-08 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-48-11 : Data saved to CSV file
+2025-Jan-28-15-48-11 : SQL Connection initiated
+2025-Jan-28-15-48-11 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-48-11 : Process Complete
+2025-Jan-28-15-53-23 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-53-26 : Data saved to CSV file
+2025-Jan-28-15-53-26 : SQL Connection initiated
+2025-Jan-28-15-53-26 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-53-26 : Process Complete
+2025-Jan-28-15-54-26 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-15-54-28 : Data saved to CSV file
+2025-Jan-28-15-54-28 : SQL Connection initiated
+2025-Jan-28-15-54-28 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-15-54-28 : Process Complete
+2025-Jan-28-16-11-49 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-11-52 : Data saved to CSV file
+2025-Jan-28-16-11-52 : SQL Connection initiated
+2025-Jan-28-16-11-52 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-11-52 : Process Complete
+2025-Jan-28-16-20-35 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-20-37 : Data saved to CSV file
+2025-Jan-28-16-20-37 : SQL Connection initiated
+2025-Jan-28-16-20-37 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-20-37 : Process Complete
+2025-Jan-28-16-21-17 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-21-19 : Data saved to CSV file
+2025-Jan-28-16-21-19 : SQL Connection initiated
+2025-Jan-28-16-21-19 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-21-19 : Process Complete
+2025-Jan-28-16-22-10 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-22-12 : Data saved to CSV file
+2025-Jan-28-16-22-12 : SQL Connection initiated
+2025-Jan-28-16-22-12 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-22-12 : Process Complete
+2025-Jan-28-16-35-39 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-36-30 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-36-32 : Data saved to CSV file
+2025-Jan-28-16-36-32 : SQL Connection initiated
+2025-Jan-28-16-36-32 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-36-32 : Process Complete
+2025-Jan-28-16-47-04 : Preliminaries complete. Initiating ETL process
+2025-Jan-28-16-47-07 : Data saved to CSV file
+2025-Jan-28-16-47-07 : SQL Connection initiated
+2025-Jan-28-16-47-07 : Data loaded to Database as a table, Executing queries
+2025-Jan-28-16-47-07 : Process Complete
+2025-Jan-29-11-02-55 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-11-02-57 : Data saved to CSV file
+2025-Jan-29-11-02-57 : SQL Connection initiated
+2025-Jan-29-11-02-57 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-11-02-57 : Process Complete
+2025-Jan-29-11-19-34 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-11-19-37 : Data saved to CSV file
+2025-Jan-29-11-19-37 : SQL Connection initiated
+2025-Jan-29-11-19-37 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-11-19-37 : Process Complete
+2025-Jan-29-11-19-40 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-11-19-42 : Data saved to CSV file
+2025-Jan-29-11-19-42 : SQL Connection initiated
+2025-Jan-29-11-19-42 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-11-19-42 : Process Complete
+2025-Jan-29-12-46-00 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-46-03 : Data saved to CSV file
+2025-Jan-29-12-46-03 : SQL Connection initiated
+2025-Jan-29-12-46-03 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-46-03 : Process Complete
+2025-Jan-29-12-46-45 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-46-48 : Data saved to CSV file
+2025-Jan-29-12-46-48 : SQL Connection initiated
+2025-Jan-29-12-46-48 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-46-48 : Process Complete
+2025-Jan-29-12-52-25 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-52-28 : Data saved to CSV file
+2025-Jan-29-12-52-28 : SQL Connection initiated
+2025-Jan-29-12-52-28 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-52-28 : Process Complete
+2025-Jan-29-12-53-03 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-53-06 : Data saved to CSV file
+2025-Jan-29-12-53-06 : SQL Connection initiated
+2025-Jan-29-12-53-06 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-53-06 : Process Complete
+2025-Jan-29-12-53-11 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-53-13 : Data saved to CSV file
+2025-Jan-29-12-53-13 : SQL Connection initiated
+2025-Jan-29-12-53-13 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-53-13 : Process Complete
+2025-Jan-29-12-53-45 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-53-47 : Data saved to CSV file
+2025-Jan-29-12-53-47 : SQL Connection initiated
+2025-Jan-29-12-53-47 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-53-47 : Process Complete
+2025-Jan-29-12-55-40 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-12-55-43 : Data saved to CSV file
+2025-Jan-29-12-55-43 : SQL Connection initiated
+2025-Jan-29-12-55-43 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-12-55-43 : Process Complete
+2025-Jan-29-13-09-01 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-09-04 : Data saved to CSV file
+2025-Jan-29-13-09-04 : SQL Connection initiated
+2025-Jan-29-13-09-04 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-09-04 : Process Complete
+2025-Jan-29-13-16-01 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-16-04 : Data saved to CSV file
+2025-Jan-29-13-16-04 : SQL Connection initiated
+2025-Jan-29-13-16-04 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-16-04 : Process Complete
+2025-Jan-29-13-17-16 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-17-19 : Data saved to CSV file
+2025-Jan-29-13-17-19 : SQL Connection initiated
+2025-Jan-29-13-17-19 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-17-19 : Process Complete
+2025-Jan-29-13-18-58 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-19-00 : Data saved to CSV file
+2025-Jan-29-13-19-00 : SQL Connection initiated
+2025-Jan-29-13-19-00 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-19-01 : Process Complete
+2025-Jan-29-13-21-35 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-21-37 : Data saved to CSV file
+2025-Jan-29-13-21-37 : SQL Connection initiated
+2025-Jan-29-13-21-37 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-21-37 : Process Complete
+2025-Jan-29-13-28-57 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-29-01 : Data saved to CSV file
+2025-Jan-29-13-29-01 : SQL Connection initiated
+2025-Jan-29-13-29-01 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-29-01 : Process Complete
+2025-Jan-29-13-29-35 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-29-38 : Data saved to CSV file
+2025-Jan-29-13-29-38 : SQL Connection initiated
+2025-Jan-29-13-29-38 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-29-38 : Process Complete
+2025-Jan-29-13-30-31 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-30-34 : Data saved to CSV file
+2025-Jan-29-13-30-34 : SQL Connection initiated
+2025-Jan-29-13-30-34 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-30-34 : Process Complete
+2025-Jan-29-13-30-52 : Preliminaries complete. Initiating ETL process
+2025-Jan-29-13-30-54 : Data saved to CSV file
+2025-Jan-29-13-30-54 : SQL Connection initiated
+2025-Jan-29-13-30-54 : Data loaded to Database as a table, Executing queries
+2025-Jan-29-13-30-54 : Process Complete
+2025-Feb-17-13-16-00 : Preliminaries complete. Initiating ETL process
+2025-Feb-17-13-16-03 : Data saved to CSV file
+2025-Feb-17-13-16-03 : SQL Connection initiated
+2025-Feb-17-13-16-03 : Data loaded to Database as a table, Executing queries
+2025-Feb-17-13-16-03 : Process Complete
+2025-Feb-20-15-11-23 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-15-11-28 : Data saved to CSV file
+2025-Feb-20-15-11-28 : SQL Connection initiated
+2025-Feb-20-15-11-28 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-15-11-29 : Process Complete
+2025-Feb-20-15-39-28 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-15-39-32 : Data saved to CSV file
+2025-Feb-20-15-39-32 : SQL Connection initiated
+2025-Feb-20-15-39-32 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-15-39-32 : Process Complete
+2025-Feb-20-15-44-19 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-15-44-23 : Data saved to CSV file
+2025-Feb-20-15-44-23 : SQL Connection initiated
+2025-Feb-20-15-44-23 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-15-44-23 : Process Complete
+2025-Feb-20-15-57-14 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-15-57-16 : Data saved to CSV file
+2025-Feb-20-15-57-16 : SQL Connection initiated
+2025-Feb-20-15-57-16 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-15-57-16 : Process Complete
+2025-Feb-20-16-13-27 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-13-33 : Data saved to CSV file
+2025-Feb-20-16-13-33 : SQL Connection initiated
+2025-Feb-20-16-13-35 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-13-37 : Process Complete
+2025-Feb-20-16-19-23 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-19-26 : Data saved to CSV file
+2025-Feb-20-16-19-26 : SQL Connection initiated
+2025-Feb-20-16-19-26 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-19-26 : Process Complete
+2025-Feb-20-16-25-40 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-25-43 : Data saved to CSV file
+2025-Feb-20-16-25-43 : SQL Connection initiated
+2025-Feb-20-16-25-43 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-25-43 : Process Complete
+2025-Feb-20-16-32-20 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-32-24 : Data saved to CSV file
+2025-Feb-20-16-32-24 : SQL Connection initiated
+2025-Feb-20-16-32-26 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-32-26 : Process Complete
+2025-Feb-20-16-44-32 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-44-38 : Data saved to CSV file
+2025-Feb-20-16-44-38 : SQL Connection initiated
+2025-Feb-20-16-44-38 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-44-39 : Process Complete
+2025-Feb-20-16-47-56 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-16-47-59 : Data saved to CSV file
+2025-Feb-20-16-47-59 : SQL Connection initiated
+2025-Feb-20-16-47-59 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-16-47-59 : Process Complete
+2025-Feb-20-17-21-39 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-17-21-42 : Data saved to CSV file
+2025-Feb-20-17-21-42 : SQL Connection initiated
+2025-Feb-20-17-21-42 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-17-21-43 : Process Complete
+2025-Feb-20-17-41-38 : Preliminaries complete. Initiating ETL process
+2025-Feb-20-17-41-40 : Data saved to CSV file
+2025-Feb-20-17-41-40 : SQL Connection initiated
+2025-Feb-20-17-41-41 : Data loaded to Database as a table, Executing queries
+2025-Feb-20-17-41-41 : Process Complete
+2025-Feb-27-11-53-16 : Preliminaries complete. Initiating ETL process
+2025-Feb-27-11-53-19 : Data saved to CSV file
+2025-Feb-27-11-53-19 : SQL Connection initiated
+2025-Feb-27-11-53-19 : Data loaded to Database as a table, Executing queries
+2025-Feb-27-11-53-19 : Process Complete

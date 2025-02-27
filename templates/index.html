@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeoDataBase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  </head>
+  <body style="background-color:rgba(218, 229, 203, 0.947);">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        USDA Forest Service Geographies
+      </h1>
+      <p class="subtitle">
+        Table of geographies within the U.S. of various surveys performed by the USDA-USFS
+        <br>source: <a href="https://data.fs.usda.gov/geodata/edw/datasets.php">https://data.fs.usda.gov/geodata/edw/datasets.php</a>
+      </p>
+     </div>
+     <div> 
+        {{ table_html | safe }}
+     </div>
+     <img src="{{ url_for('static', filename='images/map.png')}}" width="600" alt="your map">
+  </section>
+ 
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  </body>
+</html>
