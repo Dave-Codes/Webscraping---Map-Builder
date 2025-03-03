@@ -20,11 +20,11 @@
         Table of geographies within the U.S. of various surveys performed by the USDA-USFS
         <br>source: <a href="https://data.fs.usda.gov/geodata/edw/datasets.php">https://data.fs.usda.gov/geodata/edw/datasets.php</a>
       </p>
+      <a href="{{ url_for('map_page') }}">Go to Map Page</a> <!-- Add the link to go to map.html-->
      </div>
      <div> 
         {{ table_html | safe }}
      </div>
-     <img src="{{ url_for('static', filename='images/map.png')}}" width="600" alt="your map">
   </section>
  
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>

@@ -25,6 +25,9 @@ from matplotlib.lines import Line2D
 from matplotlib.legend import Legend
 from matplotlib.legend_handler import HandlerTuple, HandlerLine2D
 from matplotlib.figure import Figure
+from shapely.validation import make_valid
+
+
 
 def set_dpi():
     plt.rcParams['figure.dpi'] = 300
@@ -38,32 +41,32 @@ def data_load(url):
 
 def data_transform(df):
     #add features, format, crs convert, 
-    df['centroid'] = df.centroid
+    #df['centroid'] = df.centroid
     df['center'] = list(zip(df['INTPTLAT'].astype(float), df['INTPTLON'].astype(float)))
     
     return df
 
-
-
-def map_utilities(state_row):
+def map_utilities(state_row, eco_provinces):
+    #state_row.geometry = state_row.geometry.apply(lambda x: make_valid(x))
+    
     clipping_box = state_row.geometry.to_crs(epsg=4269)
-    state_center = state_row.center.values[0]
-    eco_provinces = geopandas.read_file("S_USA.EcoMapProvinces.gdb", mask=clipping_box)
-    eco_provinces = eco_provinces.to_crs(epsg=3857)
-    eco_prov_names = eco_provinces.MAP_UNIT_NAME.unique()
-    eco_provinces['LEG_LABELS'] = eco_provinces['PROVINCE_ID'].map(str).str.cat(eco_provinces['MAP_UNIT_NAME'], sep=" ")
-    eco_provinces['CENTER'] = eco_provinces.geometry.representative_point()
-    return clipping_box, state_center, eco_provinces, eco_prov_names
+
+    clipped_eco_provinces = geopandas.clip(eco_provinces, clipping_box)
+    clipped_eco_provinces = clipped_eco_provinces.to_crs(epsg=3857)
+    eco_prov_names = clipped_eco_provinces.MAP_UNIT_NAME.unique()
+    clipped_eco_provinces['LEG_LABELS'] = clipped_eco_provinces['PROVINCE_ID'].map(str).str.cat(clipped_eco_provinces['MAP_UNIT_NAME'], sep=" ")
+    clipped_eco_provinces['CENTER'] = clipped_eco_provinces.geometry.representative_point()
+    return clipped_eco_provinces, eco_prov_names
 
 
 
-def map_color_utils(eco_provinces, prov_names):
-    num_provs = eco_provinces.shape[0]
+def map_color_utils(clipped_eco_provinces):
+    num_provs = clipped_eco_provinces.shape[0]
     color_range = cm.tab20c(range(num_provs))
     eco_colors = [(r,g,b) for r, g, b, a in [color for color in color_range]]
-    eco_provinces['colors'] = eco_colors
-    color_dict = dict(zip(prov_names, eco_colors))
-    eco_cmap = ListedColormap(eco_colors)
+    clipped_eco_provinces['colors'] = eco_colors
+    #color_dict = dict(zip(prov_names, eco_colors))
+    #eco_cmap = ListedColormap(eco_colors)
     return eco_colors
 
 
@@ -71,8 +74,8 @@ def map_color_utils(eco_provinces, prov_names):
 #polygon_lists
 
 #centroids = [polygon.centroid for polygon in plist for plist in [list(multipol.geoms) for multipol in eco_provinces.geometry]]
-def centroids(eco_provinces):
-    polygon_lists = [list(multipol.geoms) for multipol in eco_provinces.geometry]
+def centroids(clipped_eco_provinces):
+    polygon_lists = [list(multipol.geoms) if multipol.geom_type == 'MultiPolygon' else [multipol] for multipol in clipped_eco_provinces.geometry]
     centroids = []
     for plist in polygon_lists:
         num_polygons = len(plist)
@@ -80,6 +83,8 @@ def centroids(eco_provinces):
             ctr = MultiPolygon(plist).representative_point()
             #if ctr.buffer(50).contains()
             centroids.append(ctr)
+        elif num_polygons == 1:
+            centroids.append(plist[0].representative_point())
 
         else:
             for polygon in plist:
@@ -87,32 +92,34 @@ def centroids(eco_provinces):
 
     centroids_gdf = geopandas.GeoDataFrame(data=centroids)
     centroids_gdf = centroids_gdf.set_geometry(col=centroids_gdf[0])
-    centroids_gdf = centroids_gdf.set_crs(crs=eco_provinces.crs)
+    centroids_gdf = centroids_gdf.set_crs(crs=clipped_eco_provinces.crs)
     
-    centroids_gdf = centroids_gdf.sjoin(eco_provinces)
+    centroids_gdf = centroids_gdf.sjoin(clipped_eco_provinces)
 
     return centroids_gdf
 
 
 
-def build_map():
+def build_map(us_states_gdb, eco_provinces, state_name=''):
     mpl.use('agg')
     set_dpi()
-    state_name = input("Enter a U.S. State Name to explore: ")
-    us_states_gdb = geopandas.read_file('tl_2012_us_state/tl_2012_us_state.shp')
-    us_states_gdb = data_transform(us_states_gdb)
+    #state_name = input("Enter a U.S. State Name to explore: ")
+    
+    state_name = state_name.title()
+
     state_row = us_states_gdb[us_states_gdb.NAME == state_name]
+    
 
-    clipping_box, state_center, eco_provinces, eco_prov_names = map_utilities(state_row)
+    clipped_eco_provinces, eco_prov_names = map_utilities(state_row, eco_provinces)
 
-    eco_colors = map_color_utils(eco_provinces, eco_prov_names)
-    centroids_gdf = centroids(eco_provinces)
+    eco_colors = map_color_utils(clipped_eco_provinces)
+    centroids_gdf = centroids(clipped_eco_provinces)
     
 
     fig, ax = plt.subplots(layout='tight', edgecolor=(0.3, 0.5, 0.4, 0.7), linewidth=2)
 
 
-    eco_provinces.plot(ax = ax, color=eco_provinces['colors'], legend=True,legend_kwds={'loc':(0.0, 0.0),'shadow':True},alpha=0.6, edgecolor='black', linewidth=0.5, figsize=(5, 7),zorder=1)
+    clipped_eco_provinces.plot(ax = ax, color=clipped_eco_provinces['colors'], legend=True,legend_kwds={'loc':(0.0, 0.0),'shadow':True},alpha=0.6, edgecolor='black', linewidth=0.5, figsize=(5, 7),zorder=1)
     cx.add_basemap(ax=ax, zoom=7)
     ax.set_axis_off()
     ax.set_title(label="Ecological Provinces Present in {}".format(state_name), fontstyle='oblique',color='white',path_effects=[pe.Stroke(linewidth=1.20, foreground='green'),pe.Normal()],fontsize=15,position=(0.4,1.3), va='baseline',pad=7, ha='left')
@@ -125,7 +132,7 @@ def build_map():
 
     patches=[]
 
-    for color, i in zip(eco_colors, eco_provinces.PROVINCE_ID.unique()):
+    for color, i in zip(eco_colors,  clipped_eco_provinces.PROVINCE_ID.unique()):
         
             number = mpltext.TextPath(xy=(-2.5,-3.75), s="{}".format(i), size=6)
             #marker = circle.
@@ -143,13 +150,13 @@ def build_map():
     #patches = list(map(lambda x, y:(x, str(y)), patches, eco_provinces.PROVINCE_ID.unique()))
 
             
-    legend_labels = [re.sub('\d', '', re.sub('- ', '-\n', re.sub(' and ', ' &\n', re.sub(' Province', '', i)))).lstrip() for i in eco_provinces['LEG_LABELS']]
+    legend_labels = [re.sub('\d', '', re.sub('- ', '-\n', re.sub(' and ', ' &\n', re.sub(' Province', '', i)))).lstrip() for i in clipped_eco_provinces['LEG_LABELS']]
 
 
 
     edge_color = [(0.6, 0, 0, 1)]
     state_color = [(0.3, 0, 0, 0.0)]
-    us_states_gdb[us_states_gdb.NAME == state_name].plot(ax=ax, edgecolors='black', color=state_color, linestyle='--')
+    state_row.plot(ax=ax, edgecolors='black', color=state_color, linestyle='--')
     patches.append(mpatches.Patch(facecolor=(0.0,0.0,0.0, 0.0), edgecolor='black', linestyle='--', joinstyle='round'))
     legend_labels.append(state_name)
 

@@ -1,0 +1,108 @@
+<!-- /Users/dave/development/webscraping/geo_db/templates/map.html (Modified) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Page</title>
+    <style>
+        /* Add some basic styling for the progress bar */
+        #progress-container {
+            width: 50%;
+            background-color: #ddd;
+            margin: 20px auto;
+            display: none; /* Initially hidden */
+        }
+
+        #progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+        #map-image {
+            display: none; /* Hide image initially */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Map Page</h1>
+
+    <form method="POST">
+        <label for="state_name">Enter State Name:</label>
+        <input type="text" id="state_name" name="state_name" required>
+        <button type="submit">Generate Map</button>
+    </form>
+
+    <div id="progress-container">
+        <div id="progress-bar">0%</div>
+    </div>
+    <img id="map-image" src="" alt="Generated Map">
+
+    <script>
+        const form = document.querySelector('form');
+        const progressContainer = document.getElementById('progress-container');
+        const progressBar = document.getElementById('progress-bar');
+        const mapImage = document.getElementById('map-image');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            //Show the status bar
+            progressContainer.style.display = 'block';
+            progressBar.style.width = '0%';
+            progressBar.innerText = '0%';
+            mapImage.style.display = 'none';
+            //Clear the map image cache
+            mapImage.src = "";
+
+            const stateName = document.getElementById('state_name').value;
+
+            // Send an AJAX request to trigger map generation
+            fetch('/map', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `state_name=${stateName}`
+            })
+            .then(response => {
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                
+                // Process each message from the SSE stream
+                function processStream({ done, value }) {
+                    if (done) {
+                        //Stream is completed, show the map image and hide the status bar.
+                        //Reload the map image with a timestamp to prevent caching.
+                        mapImage.src = "{{ url_for('static', filename='images/map.png') }}?t=" + new Date().getTime();
+                        mapImage.style.display = 'block';
+                        progressContainer.style.display = 'none';
+                        return;
+                    }
+
+                    //Handle progress update from server
+                    let chunk = decoder.decode(value);
+                    const progressMatch = chunk.match(/data: (\d+)/);
+                    if(progressMatch){
+                        const progress = parseInt(progressMatch[1]);
+                        progressBar.style.width = `${progress}%`;
+                        progressBar.innerText = `${progress}%`;
+                    }
+                    
+                    return reader.read().then(processStream);
+                }
+                
+                return reader.read().then(processStream);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
+
