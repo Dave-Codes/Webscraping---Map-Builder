@@ -61,15 +61,12 @@ def generate_map_with_progress(state_name):
     eco_provinces = geopandas.read_file("S_USA.EcoMapProvinces.gdb")
     us_states_gdb = data_transform(us_states_gdb)
 
-    if not eco_provinces.geometry.is_valid.all():
-        print("Error: eco_provinces contains invalid geometries.")
-        eco_provinces.geometry = eco_provinces.geometry.apply(lambda x: make_valid(x))
-        print(f"Fixed {sum(~eco_provinces.geometry.is_valid)} rows in eco_provinces.")
-    else:
-        print('eco_provinces has valid geometries')
+
+    eco_provinces.geometry = eco_provinces.geometry.apply(lambda x: make_valid(x))
+
 
     mpl.use('agg')  # Ensure non-interactive backend for server use
-    set_dpi() #Set figure dpi
+    
 
     state_name = state_name.title()
     
@@ -131,7 +128,7 @@ def generate_map_with_progress(state_name):
     
     # --- Step 9: Save Figure --- (Approx. 5% of total work)
     yield "data: 90\n\n"
-    fig.savefig(os.path.join('static', 'images', 'map.png'), bbox_inches='tight') #added bbox_inches so that the figure saves properly.
+    fig.savefig(os.path.join('static', 'images', 'map.png'), dpi=300, bbox_inches='tight') #added bbox_inches so that the figure saves properly.
     
     # --- Step 10: Finalization --- (Approx. 10% of total work)
     yield "data: 100\n\n"
