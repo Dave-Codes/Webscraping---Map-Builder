@@ -42,32 +42,32 @@ def data_load(url):
 def data_transform(df):
     #add features, format, crs convert, 
     #df['centroid'] = df.centroid
-    df['center'] = list(zip(df['INTPTLAT'].astype(float), df['INTPTLON'].astype(float)))
+    #df['center'] = list(zip(df['INTPTLAT'].astype(float), df['INTPTLON'].astype(float)))
     
     return df
 
-def map_utilities(state_row, eco_provinces):
+def map_utilities(state_row, dataset):
     #state_row.geometry = state_row.geometry.apply(lambda x: make_valid(x))
     
     clipping_box = state_row.geometry.to_crs(epsg=4269)
 
-    clipped_eco_provinces = geopandas.clip(eco_provinces, clipping_box)
-    clipped_eco_provinces = clipped_eco_provinces.to_crs(epsg=3857)
-    eco_prov_names = clipped_eco_provinces.MAP_UNIT_NAME.unique()
-    clipped_eco_provinces['LEG_LABELS'] = clipped_eco_provinces['PROVINCE_ID'].map(str).str.cat(clipped_eco_provinces['MAP_UNIT_NAME'], sep=" ")
-    clipped_eco_provinces['CENTER'] = clipped_eco_provinces.geometry.representative_point()
-    return clipped_eco_provinces, eco_prov_names
+    clipped_dataset = geopandas.clip(dataset, clipping_box)
+    clipped_dataset = clipped_dataset.to_crs(epsg=3857)
+    #eco_prov_names = clipped_eco_provinces.MAP_UNIT_NAME.unique()
+    #clipped_eco_provinces['LEG_LABELS'] = clipped_eco_provinces['PROVINCE_ID'].map(str).str.cat(clipped_eco_provinces['MAP_UNIT_NAME'], sep=" ")
+    #clipped_eco_provinces['CENTER'] = clipped_eco_provinces.geometry.representative_point()
+    return clipped_dataset
 
 
 
-def map_color_utils(clipped_eco_provinces):
-    num_provs = clipped_eco_provinces.shape[0]
-    color_range = cm.tab20c(range(num_provs))
-    eco_colors = [(r,g,b) for r, g, b, a in [color for color in color_range]]
-    clipped_eco_provinces['colors'] = eco_colors
+def map_color_utils(clipped_dataset):
+    num_shapes = clipped_dataset.shape[0]
+    color_range = cm.tab20c(range(num_shapes))
+    shape_colors = [(r,g,b) for r, g, b, a in [color for color in color_range]]
+    clipped_dataset['colors'] = shape_colors
     #color_dict = dict(zip(prov_names, eco_colors))
     #eco_cmap = ListedColormap(eco_colors)
-    return eco_colors
+    return shape_colors
 
 
 
@@ -122,7 +122,7 @@ def build_map(us_states_gdb, eco_provinces, state_name=''):
     clipped_eco_provinces.plot(ax = ax, color=clipped_eco_provinces['colors'], legend=True,legend_kwds={'loc':(0.0, 0.0),'shadow':True},alpha=0.6, edgecolor='black', linewidth=0.5, figsize=(5, 7),zorder=1)
     cx.add_basemap(ax=ax, zoom=7)
     ax.set_axis_off()
-    ax.set_title(label="Ecological Provinces Present in {}".format(state_name), fontstyle='oblique',color='white',path_effects=[pe.Stroke(linewidth=1.20, foreground='green'),pe.Normal()],fontsize=15,position=(0.4,1.3), va='baseline',pad=7, ha='left')
+    ax.set_title(label="{}".format(state_name), fontstyle='oblique',color='white',path_effects=[pe.Stroke(linewidth=1.20, foreground='green'),pe.Normal()],fontsize=15,position=(0.4,1.3), va='baseline',pad=7, ha='left')
 
     
 

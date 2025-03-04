@@ -21,12 +21,36 @@
         <br>source: <a href="https://data.fs.usda.gov/geodata/edw/datasets.php">https://data.fs.usda.gov/geodata/edw/datasets.php</a>
       </p>
       <a href="{{ url_for('map_page') }}">Go to Map Page</a> <!-- Add the link to go to map.html-->
+        <div class="select">
+            <select id="dataset_select">
+                {% for dataset in dataset_choices %}
+                    <option value="{{ dataset.url }}">{{ dataset.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
      </div>
      <div> 
         {{ table_html | safe }}
      </div>
   </section>
- 
+  <script>
+    // Get the select element
+    const datasetSelect = document.getElementById('dataset_select');
+
+    // Add an event listener for when the user selects an option
+    datasetSelect.addEventListener('change', function() {
+        // Get the selected dataset URL
+        const selectedDatasetUrl = this.value;
+
+        // Store the dataset URL in local storage
+        localStorage.setItem('selectedDatasetUrl', selectedDatasetUrl);
+    });
+
+    // Check if there is a dataset url in local storage and set the default value
+    if(localStorage.getItem('selectedDatasetUrl')){
+        datasetSelect.value = localStorage.getItem('selectedDatasetUrl');
+    }
+  </script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-  </body>
+</body>
 </html>
