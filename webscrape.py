@@ -129,22 +129,22 @@ def run_queries(query_statements, sql_connection):
 
 
 
-log_progress("Preliminaries complete. Initiating ETL process")
+#log_progress("Preliminaries complete. Initiating ETL process")
 
 df = extract(url, table_attribs)
 
-load_to_csv(df, csv_path)
-log_progress("Data saved to CSV file")
+#load_to_csv(df, csv_path)
+#log_progress("Data saved to CSV file")
 
 conn = sqlite3.connect(db_name)
-log_progress("SQL Connection initiated")
+#log_progress("SQL Connection initiated")
 
-load_to_db(df, conn, table_name)
-log_progress("Data loaded to Database as a table, Executing queries")
+#load_to_db(df, conn, table_name)
+#log_progress("Data loaded to Database as a table, Executing queries")
 
 query_statement = [f"SELECT * FROM Geometries LIMIT 5"]
-run_queries(query_statement, conn)
-log_progress("Process Complete")
+#run_queries(query_statement, conn)
+#log_progress("Process Complete")
 
 '''print("Extracted DF: \n", banks_df)
 log_progress("Data extraction complete. Initiating Transformation process")

@@ -126,7 +126,7 @@ def generate_map_with_progress(state_name, dataset_url):
 
     us_states_gdb = geopandas.read_file('tl_2012_us_state/tl_2012_us_state.shp')
     us_states_gdb = data_transform(us_states_gdb)
-    set_dpi()
+ 
     dataset_url = re.findall(r'"(.*?)"', dataset_url)[0]
     print(dataset_url)
     # Check if the dataset_url is valid before reading it
@@ -232,6 +232,7 @@ def generate_map_with_progress(state_name, dataset_url):
         os.makedirs(static_img_dir)
 
     map_filename = os.path.join(static_img_dir, 'map.png')
+    plt.figure(figsize=(1, 2))
     fig.savefig(map_filename, bbox_inches='tight', dpi=300)  # added bbox_inches so that the figure saves properly.
     print(f"Map saved to: {map_filename}")
 
