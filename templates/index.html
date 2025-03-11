@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeoDataBase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  </head>
+  <body style="background-color:rgba(218, 229, 203, 0.947);">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        USDA Forest Service Geographies
+      </h1>
+      <p class="subtitle">
+        Table of geographies within the U.S. of various surveys performed by the USDA-USFS
+        <br>source: <a href="https://data.fs.usda.gov/geodata/edw/datasets.php">https://data.fs.usda.gov/geodata/edw/datasets.php</a>
+      </p>
+      <a href="{{ url_for('map_page') }}">Go to Map Page</a> <!-- Add the link to go to map.html-->
+        <div class="select">
+            <select id="dataset_select">
+                {% for dataset in dataset_choices %}
+                    <option value="{{ dataset.url }}">{{ dataset.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+     </div>
+     <div> 
+        {{ table_html | safe }}
+     </div>
+  </section>
+  <script>
+    // Get the select element
+    const datasetSelect = document.getElementById('dataset_select');
+
+    // Add an event listener for when the user selects an option
+    datasetSelect.addEventListener('change', function() {
+        // Get the selected dataset URL
+        const selectedDatasetUrl = this.value;
+
+        // Store the dataset URL in local storage
+        localStorage.setItem('selectedDatasetUrl', selectedDatasetUrl);
+    });
+
+    // Check if there is a dataset url in local storage and set the default value
+    if(localStorage.getItem('selectedDatasetUrl')){
+        datasetSelect.value = localStorage.getItem('selectedDatasetUrl');
+    }
+  </script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+</body>
+</html>

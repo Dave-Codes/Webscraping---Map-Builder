@@ -1,0 +1,9 @@
+usfs/
+.temp_shapefiles/
+tl_2012_us_state.*
+Forest_Service.db.*
+banks_project.py
+us_forest_service.csv
+*.gdb*
+*.gdbtable*
+gdb_directory/
