@@ -5,3 +5,4 @@ Forest_Service.db.*
 banks_project.py
 us_forest_service.csv
 *.gdb*
+*.gdbtable*
